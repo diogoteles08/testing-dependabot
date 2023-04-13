@@ -21,21 +21,21 @@ jobs:
        
   installing-npm-dependencies:
     runs-on: ubuntu-latest   
-      steps:
-        - uses: actions/setup-node@v3
-        - run: npm install diogo-testing-npm-provenance
+    steps:
+      - uses: actions/setup-node@v3
+      - run: npm install diogo-testing-npm-provenance
         
         
   installing-python-dependencies:
     runs-on: ubuntu-latest   
-      steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-python@v4
-        - run: pip install pylint
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - run: pip install pylint
   
   installing-go-dependencies:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/setup-go
-        - run: go get github.com/jung-kurt/gofpdf
+    steps:
+      - uses: actions/setup-go
+      - run: go get github.com/jung-kurt/gofpdf
   
