@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
       - uses: actions/setup-python@d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435 # v4.5.0
-      - run: pip install "pylint==1.0.0"
+      - run: pip install --require-hashes "pylint==1.0.0 --hash=sha256:c28f22ef0e3d39a7cac8d2110f8e680e8b44123050ffd5b352d77c081237cb59"
   
   installing-go-dependencies:
     runs-on: ubuntu-latest
