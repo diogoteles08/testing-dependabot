@@ -12,30 +12,30 @@ jobs:
 
     steps:
       - name: "Checkout code"
-        uses: actions/checkout
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
 
       - name: Use random "not github" action (last version is 0.0.2)
-        uses: lint-md/github-action
+        uses: lint-md/github-action@v0.0.1
        
   installing-npm-dependencies:
     runs-on: ubuntu-latest   
     steps:
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
       - run: npm install diogo-testing-npm-provenance
         
         
   installing-python-dependencies:
     runs-on: ubuntu-latest   
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      - uses: actions/setup-python@d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435 # v4.5.0
       - run: pip install pylint
   
   installing-go-dependencies:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-go
+      - uses: actions/setup-go@4d34df0c2316fe8122ab82dc22947d607c0c91f9 # v4.0.0
       - run: go get github.com/jung-kurt/gofpdf
   
