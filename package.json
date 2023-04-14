@@ -1,0 +1,22 @@
+{
+  "name": "testing-dependabot",
+  "version": "1.0.0",
+  "description": "Repository created to test if dependabot or renovabot can update hash-pinned dependencies on specific scenarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoteles08/testing-dependabot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diogoteles08/testing-dependabot/issues"
+  },
+  "homepage": "https://github.com/diogoteles08/testing-dependabot#readme",
+  "dependencies": {
+    "diogo-testing-npm-provenance": "^1.0.0"
+  }
+}
