@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/diogoteles08/testing-dependabot#readme",
   "dependencies": {
-    "diogo-testing-npm-provenance": "^1.0.0"
+    "diogo-testing-npm-provenance": "1.1.0"
   }
 }
