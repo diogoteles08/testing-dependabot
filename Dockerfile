@@ -46,4 +46,4 @@ RUN \
 RUN \
     apt-get update && \
     apt-get install choco && \
-    choco install tidyjson.portable@1.0.1 # Last version is 1.0.3
+    choco install tidyjson.portable --version=1.0.1 # Last version is 1.0.3
