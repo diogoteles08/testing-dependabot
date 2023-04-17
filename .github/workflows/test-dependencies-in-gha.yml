@@ -39,4 +39,11 @@ jobs:
       - uses: actions/setup-go@4d34df0c2316fe8122ab82dc22947d607c0c91f9 # v4.0.0
       - run: go get github.com/jung-kurt/gofpdf@v1.15.1
 
+  installing-package-using-chocolatey:
+    runs-on: ubuntu-latest
+    steps:
+      - run: apt-get update && \
+             apt-get install choco && \
+             choco install tidyjson.portable --version=1.0.1 # Last version is 1.0.3
+             
   
