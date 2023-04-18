@@ -1,7 +1,7 @@
 # Dockerfile to test if Dependabot suggest version updates on dockerfile
 
 # Not pinned container image
-FROM ubuntu:18.04
+FROM ubuntu:18.04@sha256:8aa9c2798215f99544d1ce7439ea9c3a6dfd82de607da1cec3a8a2fae005931b
 
 # Hash Pinned
 FROM ubuntu@sha256:0779371f96205678dbcaa3ef499be2e5f262c8b09aadc11754bf3daf9f35e03e

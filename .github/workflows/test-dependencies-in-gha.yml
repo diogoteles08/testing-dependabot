@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: "Checkout code"
-        uses: actions/checkout@v2
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
         with:
           persist-credentials: false
 
       - name: Use random "not github" action (last version is 0.0.2)
-        uses: lint-md/github-action@v0.0.1
+        uses: lint-md/github-action@1e5642bb8af4e82328bc67d89a2fd33a78983e4e # v0.0.1
        
   installing-npm-dependencies:
     runs-on: ubuntu-latest   
