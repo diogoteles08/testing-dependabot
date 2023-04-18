@@ -1,0 +1,37 @@
+#!/bin/bash
+# Not pinned shell script
+
+apt-get update
+
+########## PYTHON
+# Not pinned pip command
+apt-get install python3.8 # Not pointed by Scorecard Pinned-Dependency check
+
+# Install python requirement without hashing
+pip install "pylint==1.0.0"
+
+# Install all python hashed requirements
+pip install --require-hashes -r requirements.txt
+
+
+########## NPM
+apt-get install npm
+
+# Install npm requirement without hashing
+npm install diogo-testing-npm-provenance@1.0.0
+
+# Install all npm hashed requirements (using package-lock.json)
+npm ci
+
+
+########## GO
+apt-get install golang-go
+
+# Not hash-pinned, but hash pinning not a security need for GO language
+go get github.com/jung-kurt/gofpdf@v1.15.1
+
+
+######## CHOCOLATEY
+apt-get install choco
+
+choco install tidyjson.portable --version=1.0.1 # Last version is 1.0.3
