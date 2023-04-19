@@ -8,7 +8,7 @@ permissions: read-all
 jobs:
   directly-calling-github-actions:
     name: Directly calling github actions
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04 # not latest ubuntu
 
     steps:
       - name: "Checkout code"
