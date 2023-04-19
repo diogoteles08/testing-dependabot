@@ -44,6 +44,7 @@ jobs:
     steps:
       - run: apt-get update && \
              apt-get install choco && \
-             choco install tidyjson.portable --version=1.0.1 --require-checksums # Last version is 1.0.3
+             choco install tidyjson.portable --version=1.0.1 --require-checksums && \
+             choco install packages.config
              
   
