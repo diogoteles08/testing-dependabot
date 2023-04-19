@@ -36,4 +36,4 @@ apt-get install choco
 
 choco install tidyjson.portable --version=1.0.1 --require-checksums # Last version is 1.0.3
 
-choco install packages.config
+choco install packages.config --require-checksums
