@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
 
       - name: Use random "not github" action (last version is 0.0.2)
-        uses: lint-md/github-action@v0.0.1
+        uses: lint-md/github-action@c85852d6ed2623391ee4d027242d45c5c8afb86b # v0.1.1
        
   installing-npm-dependencies:
     runs-on: ubuntu-latest   
