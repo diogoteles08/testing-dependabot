@@ -28,12 +28,12 @@ npm ci
 apt-get install golang-go
 
 # Not hash-pinned, but hash pinning not a security need for GO language
-go get github.com/jung-kurt/gofpdf@v1.15.1
+go get github.com/jung-kurt/gofpdf
 
 
 ######## CHOCOLATEY
 apt-get install choco
 
-choco install tidyjson.portable --version=1.0.1 --require-checksums # Last version is 1.0.3
+choco install tidyjson.portable --version=1.0.1
 
 choco install packages.config --require-checksums
