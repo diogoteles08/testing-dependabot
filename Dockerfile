@@ -4,7 +4,7 @@
 FROM ubuntu:18.04
 
 # Hash Pinned
-FROM ubuntu@sha256:0779371f96205678dbcaa3ef499be2e5f262c8b09aadc11754bf3daf9f35e03e
+FROM ubuntu@sha256:ca5534a51dd04bbcebe9b23ba05f389466cf0c190f1f8f182d7eea92a9671d00
 
 # Environment
 ENV DEBIAN_FRONTEND noninteractive
