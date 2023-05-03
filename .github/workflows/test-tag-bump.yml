@@ -1,0 +1,11 @@
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: uraimo/run-on-arch-action@213f9061987de116e4221ec1ea239a9fc61c4102 # v2
+      - uses: uraimo/run-on-arch-action@a8003307a739516fdd80ee6d3da8924db811b8da # v2.5.0
