@@ -7,5 +7,5 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-      - uses: uraimo/run-on-arch-action@b818ac073677cb26a21e1dd897cbfe5a3726adf0 # v2
+      - uses: uraimo/run-on-arch-action@213f9061987de116e4221ec1ea239a9fc61c4102 # v2
       - uses: uraimo/run-on-arch-action@b818ac073677cb26a21e1dd897cbfe5a3726adf0 # v2.2.1
