@@ -10,27 +10,32 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0 # This line (and all the same ones) makes dependabot disabled on the repo. Comment these lines to enable it
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
 
   # Maintain dependencies for python
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
       
   # Maintain dependencies for go
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
 
   # Maintain dependencies for docker
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
